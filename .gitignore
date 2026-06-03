@@ -36,6 +36,7 @@
 .idea/
 .cache/
 .xmake/
+.codegraph/
 [Bb]uild/
 cmake-build*/
 logs/
