@@ -1,0 +1,22 @@
+module;
+
+#include <cstdint>
+
+#include "demo/common.h"
+
+export module demo:config;
+
+import std;
+
+namespace demo {
+export DEMO_API const std::string GetVersion() { return "${VERSION}"; }
+export DEMO_API std::uint32_t GetVersionMajor() { return ${VERSION_MAJOR}; }
+export DEMO_API std::uint32_t GetVersionMinor() { return ${VERSION_MINOR}; }
+export DEMO_API std::uint32_t GetVersionAlter() { return ${VERSION_ALTER}; }
+export DEMO_API std::uint64_t GetVersionBuild() { return ${VERSION_BUILD}; }
+export DEMO_API const std::string GetVersionBranch() { return "${GIT_BRANCH}"; }
+export DEMO_API const std::string GetVersionCommit() { return "${GIT_COMMIT}"; }
+} // namespace demo
+
+// module demo:config;
+// module;
