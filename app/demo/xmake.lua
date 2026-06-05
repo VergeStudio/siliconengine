@@ -29,10 +29,6 @@ target("demo", function()
         add_defines("WIN")
     end
 
-    if is_kind("shared") then
-        add_defines("DEMO_SHARED_LIB", "DEMO_EXPORT", {public = true})
-    end
-
     add_deps("silicon::core", "silicon::logger", {configs = {shared = true}})
 
     add_includedirs("include", {public = true})
