@@ -3,7 +3,7 @@
 
 import silicon.platform;
 
-#if PLATFORM_OS_FAMILY_WINDOWS
+#if SILICON_OS_FAMILY_WINDOWS
 #    if defined(DEMO_SHARED_LIB)
 #        if defined(DEMO_EXPORT)
 #            define DEMO_API __declspec(dllexport)
@@ -23,6 +23,6 @@ import silicon.platform;
 #    else
 #        define DEMO_API
 #    endif
-#endif // #if defined(PLATFORM_OS_FAMILY_WINDOWS)
+#endif // #if defined(SILICON_OS_FAMILY_WINDOWS)
 
 #endif // DEMO_COMMON_H

@@ -7,7 +7,7 @@ set_xmakever("3.0.0")
 set_languages("c17", "cxx23") -- https://xmake.io/#/zh-cn/manual/project_target?id=targetset_languages
 
 -- version
-set_version("0.0.1", { build = "%Y%m%d%H%M" })
+set_version("0.0.1", {build = "%Y%m%d%H%M"})
 
 -- 设置默认编码
 set_encodings("utf-8")

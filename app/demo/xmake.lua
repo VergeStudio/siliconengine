@@ -23,7 +23,7 @@ if is_mode("release") then
 end
 
 target("demo", function()
-    set_kind("$(kind)")
+    set_kind("binary")
 
     if is_plat("windows") then
         add_defines("WIN")
@@ -33,7 +33,7 @@ target("demo", function()
         add_defines("DEMO_SHARED_LIB", "DEMO_EXPORT", {public = true})
     end
 
-    add_deps("silicon::core", "silicon::logger", { configs = { shared = true } })
+    add_deps("silicon::core", "silicon::logger", {configs = {shared = true}})
 
     add_includedirs("include", {public = true})
     add_headerfiles("include/demo/**.hpp")
