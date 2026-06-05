@@ -14,6 +14,6 @@ set_encodings("utf-8")
 
 set_toolchains("clang")
 
-includes("pkg", "app/**")
+includes("app/**", "pkg/**")
 
 set_project("siliconengine")

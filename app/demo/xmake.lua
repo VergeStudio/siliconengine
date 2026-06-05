@@ -41,9 +41,9 @@ target("demo", function()
     add_files("src/**.cpp")
     add_files("src/**.cppm", {public = true})
 
-    set_configdir("$(builddir)/config")
+    set_configdir("$(builddir)/demo/config")
     add_configfiles("demo.config.cppm.in")
-    add_files("$(builddir)/config/demo.*.cppm", {public = true})
+    add_files("$(builddir)/demo/config/demo.*.cppm", {public = true})
 
     after_build(function(target)
 
